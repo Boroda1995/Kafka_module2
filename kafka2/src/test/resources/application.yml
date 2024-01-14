@@ -1,0 +1,12 @@
+spring:
+  kafka:
+    producer:
+      acks: all
+      retries: 3
+      properties:
+        enable.idempotence: true
+    consumer:
+      enable-auto-commit: true
+      group-id: foo_group
+      auto-offset-reset: latest
+    topic_name: temp_topic

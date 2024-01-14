@@ -1,0 +1,28 @@
+kafka:
+  topic:
+    car_location: car_coordinates
+
+#spring:
+#  kafka:
+#    topic:
+#      car_location: car_coordinates
+#    bootstrap-servers: localhost:19092,localhost:29092,localhost:39092
+#    properties:
+#      auto.register.schemas: true
+#      use.latest.version: true
+#    producer:
+#      acks: all
+#      retries: 3
+#      properties:
+#        enable.idempotence: true
+#    consumer:
+#      auto:
+#        commit:
+#          interval:
+#            ms:
+#      enable.auto.commit: true
+#      group-id: foo_group
+#      auto-offset-reset: latest
+
+server:
+  port: 8082
